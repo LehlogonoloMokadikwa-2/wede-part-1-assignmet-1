@@ -20,5 +20,29 @@
 
     height: 100vh;
 
-    
+
+}
+
+.navbar{
+    width: 1200px;
+
+    height: 80px;
+
+    margin: auto;
+
+}
+
+.icon{
+    width: 200px;
+
+    float: left;
+
+    height: 70px;
+
+    background: url(Veyra_clothing-logo.png);
+
+    background-size: cover;
+
+    margin-top: 5px;
+
 }
