@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veyra Clothing - Products</title>
+    <link rel="stylesheet" href="stylecart.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Images/Veyra_clothing_logo.png" alt="Logo featuring large stylized letters VC with Veyra Clothing written across the center, Brand above and Fashion below in gold text. The design uses a clean white background with modern elegant lines, conveying a sophisticated and creative atmosphere." width="100px">
+            <nav>
+                <h1>VEYRA CLOTHING</h1>
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Products.html">Products</a>
+                <a href="Contact.html">Contact</a>
+                <a href="Services.html">Services</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+        </div>
+        <div class="cart-icon" onclick="showCart()" title="View Cart">
+             🛒
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main id="products-page">
+        <h2>Our Products</h2>
+
+        </div>
+
+        <p>At Veyra Clothing, we offer a diverse range of high-quality apparel designed to suit various styles and occasions. Our product categories include:</p>
+        
+        <h3>Loungewear Collection</h3>
+        <table>
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td><img src="Images/Lounge_wear.png" alt="Woman seated against a plain light wall, wearing a beige ribbed knit loungewear set with a long-sleeve top and relaxed pants. Her long wavy hair falls over her shoulders as she sits with hands resting on her knees, conveying a calm and comfortable mood. The environment is minimal and softly lit, emphasizing a cozy and relaxed atmosphere. No visible text in the image." width="100px"></td>
+                <td>Cozy Loungewear Set</td>
+                <td>Soft fabric, relaxed fit, perfect for home or casual outings.</td>
+                <td>R 499.99</td>
+                <td><button class="add-to-cart" onclick="addToCart('Cozy Loungewear Set', 499.99, 'loungewear-1')"><i class="fas fa-cart-plus"></i> Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td><img src="Images/Loungewearblue.png" alt="Woman stands barefoot on a dark wooden floor in a softly lit room with white curtains, wearing a matching blue waffle-knit loungewear set featuring a long-sleeve top and drawstring joggers. Her relaxed posture and gentle lighting convey a cozy and comfortable mood. No visible text in the image." width="100px"></td>
+                <td>Chic Hoodie & Joggers</td>
+                <td>Trendy design, comfortable fit, suitable for lounging or errands.</td>
+                <td>R 599.99</td>
+                <td><button class="add-to-cart" onclick="addToCart('Chic Hoodie & Joggers', 599.99, 'loungewear-2')"><i class="fas fa-cart-plus"></i> Add to Cart</button></td>
+            </tr>
+        </table>
+
+        <h3>Streetwear Collection</h3>
+        <table>
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td><img src="Images/street_wear.jpg" alt="Woman stands on a city street wearing a black Dallas hockey jersey with the number 10 and Dallas in bold white letters, paired with loose gray pants and carrying a black bag. She has long dark hair and a relaxed posture. The background features tall buildings, a traffic light, and a green street sign reading W 57 St. The scene feels casual and confident, with an urban atmosphere." width="100px"></td>
+                <td>Graphic Tee & Jeans</td>
+                <td>Bold prints, distressed denim, perfect for an urban look.</td>
+                <td>R 699.99</td>
+                <td><button class="add-to-cart" onclick="addToCart('Graphic Tee & Jeans', 699.99, 'streetwear-1')"><i class="fas fa-cart-plus"></i> Add to Cart</button></td>
+            </tr>
+            <tr>
+                 <td><img src="Images/bb_y.jpg" alt="Young man leaning casually against a green metal fence in an urban setting, wearing an olive green sweater with white stripes on the sleeves, olive cargo pants with bold yellow graffiti-style text, white sneakers, and a light gray cap. The background features a city street with a cyclist, a pedestrian, and a large building with the letters P&V prominently displayed. The overall mood is relaxed and confident." width="100px"></td>
+                <td>Cargo Pants & Oversized Tee</td>
+                <td>Comfortable fit, versatile style, ideal for everyday wear.</td>
+                <td>R 749.99</td>
+                <td><button class="add-to-cart" onclick="addToCart('Cargo Pants & Oversized Tee', 749.99, 'streetwear-2')"><i class="fas fa-cart-plus"></i> Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td><img src="Images/hey_girl.jpg" alt="Young woman stands on a city street wearing a black oversized t-shirt with a bold graphic print, loose dark denim shorts, white socks, and tan sneakers. Her posture is relaxed and confident, with hands behind her back. The urban environment includes crosswalk lines, a passing car, and tall buildings in the background, creating a lively and modern atmosphere. No readable text is present in the image. The emotional tone is casual and self-assured." width="100px"></td>
+                <td>Oversized Graphic Tee</td>
+                <td>Trendy design, relaxed fit, perfect for casual outings.</td>
+                <td>R 649.99</td>
+                <td><button class="add-to-cart" onclick="addToCart('Oversized Graphic Tee', 649.99, 'streetwear-3')"><i class="fas fa-cart-plus"></i> Add to Cart</button></td>
+            </tr>
+        </table>
+        
+        <h3>We are committed to providing our customers with fashionable apparel that meets their needs and preferences. Explore our collections to find the perfect pieces that reflect your personal style.</h3>
+    </main>
+
+    <div id="cart-page">
+        <h2>Your Shopping Cart</h2>
+        
+        <div id="cart-items-container" class="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+            <div class="empty-cart">
+                <h3>Your cart is empty</h3>
+                <p>Add some products from our collections to get started!</p>
+            </div>
+        </div>
+        
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal">R 0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Discount (50% Off First Purchase):</span>
+                <span id="cart-discount">-R 0.00</span>
+            </div>
+            <div class="summary-row summary-total">
+                <span>Total:</span>
+                <span id="cart-total">R 0.00</span>
+            </div>
+            
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Copyright - Lehlogonolo. 2025</p> 
+    </footer>
+
+    <script>
+        // Cart functionality
+        let cart = [];
+        let firstPurchaseDiscount = true;
+        
+        function addToCart(name, price, imageId) {
+            // Check if item is already in cart
+            const existingItem = cart.find(item => item.name === name);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    name: name,
+                    price: price,
+                    quantity: 1,
+                    imageId: imageId
+                });
+            }
+            
+            updateCartCount();
+            showNotification(`${name} added to cart!`);
+        }
+        
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartDisplay();
+            updateCartCount();
+        }
+        
+        function updateCartCount() {
+            const count = cart.reduce((total, item) => total + item.quantity, 0);
+            document.getElementById('cart-count').textContent = count;
+        }
+        
+        function updateCartDisplay() {
+            const container = document.getElementById('cart-items-container');
+            const subtotalElement = document.getElementById('cart-subtotal');
+            const discountElement = document.getElementById('cart-discount');
+            const totalElement = document.getElementById('cart-total');
+            
+            if (cart.length === 0) {
+                container.innerHTML = '<div class="empty-cart"><h3>Your cart is empty</h3><p>Add some products from our collections to get started!</p></div>';
+                subtotalElement.textContent = 'R 0.00';
+                discountElement.textContent = '-R 0.00';
+                totalElement.textContent = 'R 0.00';
+                return;
+            }
+            
+            let subtotal = 0;
+            let html = '';
+            
+            cart.forEach((item, index) => {
+                const itemTotal = item.price * item.quantity;
+                subtotal += itemTotal;
+                
+                html += `
+                <div class="cart-item">
+                    <img class="cart-item-image" src="https://placeholder-image-service.onrender.com/image/200x200?prompt=${encodeURIComponent(item.name)}&id=${item.imageId}" alt="${item.name}">
+                    <div class="cart-item-details">
+                        <h3>${item.name}</h3>
+                        <div class="cart-item-price">R ${item.price.toFixed(2)}</div>
+                        <div>Quantity: ${item.quantity}</div>
+                        <div>Total: R ${itemTotal.toFixed(2)}</div>
+                        <button class="remove-item" onclick="removeFromCart(${index})">Remove</button>
+                    </div>
+                </div>
+                `;
+            });
+            
+            const discount = firstPurchaseDiscount ? subtotal * 0.5 : 0;
+            const total = subtotal - discount;
+            
+            container.innerHTML = html;
+            subtotalElement.textContent = `R ${subtotal.toFixed(2)}`;
+            discountElement.textContent = `-R ${discount.toFixed(2)}`;
+            totalElement.textContent = `R ${total.toFixed(2)}`;
+        }
+        
+        function showCart() {
+            document.getElementById('products-page').style.display = 'none';
+            document.getElementById('cart-page').style.display = 'block';
+            updateCartDisplay();
+        }
+        
+        function hideCart() {
+            document.getElementById('cart-page').style.display = 'none';
+            document.getElementById('products-page').style.display = 'block';
+        }
+        
+        function checkout() {
+            if (cart.length === 0) {
+                alert('Your cart is empty. Add some items before checking out.');
+                return;
+            }
+            
+            alert('Thank you for your purchase! Your order has been placed.');
+            cart = [];
+            firstPurchaseDiscount = false;
+            updateCartCount();
+            updateCartDisplay();
+            hideCart();
+        }
+        
+        function showNotification(message) {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.position = 'fixed';
+            notification.style.bottom = '20px';
+            notification.style.right = '20px';
+            notification.style.backgroundColor = '#27ae60';
+            notification.style.color = 'white';
+            notification.style.padding = '10px 20px';
+            notification.style.borderRadius = '4px';
+            notification.style.zIndex = '1000';
+            notification.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
+            
+            document.body.appendChild(notification);
+            
+            // Remove notification after 3 seconds
+            setTimeout(() => {
+                document.body.removeChild(notification);
+            }, 3000);
+        }
+        
+        // Initialize cart count
+        updateCartCount();
+    </script>
+</body>
+</html>

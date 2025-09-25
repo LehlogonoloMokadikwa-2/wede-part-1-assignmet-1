@@ -8,3 +8,172 @@ body{
     color: #f5f5f5;
 
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333; /* Dark gray for text */
+    background-color: #fff; /* White background */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee; /* Subtle border */
+}
+
+header img {
+    height: 60px; /* Adjusted for better proportion; original width=100px may be too small */
+    width: auto;
+    alt: "Veyra Clothing Logo"; /* Note: alt text is already in HTML */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between elements */
+}
+
+nav h1 {
+    font-size: 1.8em;
+    color: #D4AF37; /* Gold color to match logo */
+    font-weight: bold;
+    margin-right: 20px; /* Space before links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    color: #D4AF37; /* Gold on hover */
+    background-color: #f9f9f9; /* Subtle background */
+}
+
+ .cart-icon {
+            position: relative;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 8px;
+            transition: transform 0.2s;
+           
+        }
+        .cart-icon:hover {
+            transform: scale(1.1);
+        }
+        
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #D4AF37;
+            color: #000;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+/* HR styles (horizontal rules) */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #eee;
+    margin: 20px 0;
+}
+
+/* Main content styles */
+main {
+    padding: 40px 0;
+}
+
+main h2 {
+    font-size: 2.2em;
+    color: #D4AF37; /* Gold for heading */
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+main p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify; /* Justified text for a polished look */
+}
+
+main p:last-of-type {
+    margin-bottom: 0; /* No extra space after last paragraph */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f9f9f9; /* Light gray background */
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav h1 {
+        margin-right: 0;
+        font-size: 1.5em;
+    }
+
+    main h2 {
+        font-size: 1.8em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        height: 50px;
+    }
+
+    nav a {
+        padding: 6px 12px;
+        font-size: 0.95em;
+    }
+}
